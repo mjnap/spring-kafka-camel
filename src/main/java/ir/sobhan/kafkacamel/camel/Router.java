@@ -41,6 +41,6 @@ public class Router extends RouteBuilder {
         from("scheduler://foo?delay=60000")
                 .delay(60000)
                 .process(consumeProcessor)
-                .log("Consumer sum : ${body}");
+                .log("Consume sum : ${body}");
     }
 }
